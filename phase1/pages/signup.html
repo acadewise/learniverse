@@ -3,72 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About learniverse</title>
+    <title>signup</title>
     <style></style>
     <link rel="stylesheet" href="../css/master.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Apply basic styles to the form container */
+          .signup__form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+          }
+
+          /* Style the form title */
+          .signup__title {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          /* Style the input fields and icons */
+          .signup__input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+          }
+
+          .signup__input i {
+            margin-right: 10px;
+          }
+
+          /* Style the buttons */
+          .signup__btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+
+          .signup__btn:hover {
+            background-color: #0056b3;
+          }
+
+          /* Style the social icons */
+          .signup__social-icon {
+            text-align: center;
+          }
+
+          .signup__social-icon-link {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #007BFF;
+            text-decoration: none;
+          }
+
+          .signup__social-icon-link:hover {
+            color: #0056b3;
+          }
+    </style>
   </head>
   <body>
-    <!-- header -->
-    <header>
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-3">
-               <div class="logo">
-                  <a href="/" title="logo"> learniverse </a>
-               </div>
-               <div class="mob-menu">
-                  <span>
-                     <i class="fa fa-bars"></i>
-                  </span>
-               </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-9">
-               <div class="main-menu">
-                  <ul class="nav">
-                     <li><a href="/"> Home </a> </li>
-                     <li><a href="#"> Process </a> </li>
-                     <li><a href="#"> Blog </a> </li>
-                    <li><a href="#"> Contact Us </a> </li>
-                     </ul>
-                  <ul class="right-nav">
-                      <li><a href="#"> <i class="fa fa-user"></i> Log in </a> </li>
-                    <li class="active"> <a href="#"> <i class="fa fa-sign-in"></i> Sign up </a> </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </header>
-    <div class="container">
-      <div class="about">
-        <h1>About Learniverse</h1>
-        <p>
-          Learniver is a platform where you can learn and set full university
-          courses. You can also create your own courses and share them with the
-          world. You can also learn from other people's courses. You can also
-          create your own courses and share them with the world. You can also
-          learn from other people's courses.
-        </p>
-
-        <h2>Our Mission</h2>
-        <p>
-          Learniver is a platform where you can learn and set full university
-          courses. You can also create your own courses and share them with the
-          world. You can also learn from other people's courses. You can also
-          create your own courses and share them with the world. You can also
-          learn from other people's courses.
-        </p>
-
-        <h2>Our Vision</h2>
-        <p>
-          Learniver is a platform where you can learn and set full university
-          courses. You can also create your own courses and share them with the
-          world. You can also learn from other people's courses. You can also
-          create your own courses and share them with the world. You can also
-          learn from other people's courses.
-        </p>
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
+      <div class="signup signup--passive">
+        <div class="signup__content">
+          <div class="signup__img">
+            <img src="../images/signup.svg" alt="" />
+          </div>
+          <div class="signup__form">
+            <!-- use session storage with username and password and form has 4 fields one is username and password confirm password and email -->
+            <div class="signup__form">
+              <form id="signupForm">
+                <h1 class="signup__title">Sign Up</h1>
+                <div class="signup__input">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+                <div class="signup__input">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="signup__input">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <div class="signup__input">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    id="password2"
+                    name="password2"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                </div>
+                <input type="button" value="Sign Up" class="signup__btn" id="signupBtn" />
+                <p class="signup__social-text">Or Sign Up with social platforms</p>
+                <div class="signup__social-icon">
+                  <a href="#" class="signup__social-icon-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="signup__social-icon-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="signup__social-icon-link"
+                    ><i class="fab fa-google"></i
+                  ></a>
+                  <a href="#" class="signup__social-icon-link"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </form>
+            </div>            
+          </div>
+        </div>
       </div>
     </div>
     <!-- footer -->
@@ -173,15 +252,49 @@
                   <a href="#">learniverse Team</a>
                 </p>
               </div>
-              <div class="go_top">
-                <span class="icon-arrow-up"></span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const signupForm = document.getElementById("signupForm");
+      const signupBtn = document.getElementById("signupBtn");
+    
+      signupForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        // Get values from the form
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const password2 = document.getElementById("password2").value;
+    
+        // Check if passwords match
+        if (password !== password2) {
+          alert("Passwords do not match.");
+          return;
+        }
+    
+        // Create an object to store user information
+        const user = {
+          username,
+          email,
+          password,
+        };
+    
+        // Store user information in session storage
+        sessionStorage.setItem("user", JSON.stringify(user));
+    
+        // Redirect to another page or perform any other action here
+        // For example, you can use window.location.href = "success.html";
+    
+        // Clear the form
+        signupForm.reset();
+      });
+    });    
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../js/main.js"></script>
 </html>
