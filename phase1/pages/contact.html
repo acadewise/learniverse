@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - learniverse</title>
+    <style></style>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <style>
+      body {
+        background-color: white
+      }
+      .contact {
+        margin-top: 20px;
+    }
+    
+    .contact h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .contact p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .contact ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .contact ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .contact form {
+        margin-top: 20px;
+    }
+    
+    .contact form label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    .contact form button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .contact form button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-3">
+               <div class="logo">
+                  <a href="/" title="logo"> learniverse </a>
+               </div>
+               <div class="mob-menu">
+                  <span>
+                     <i class="fa fa-bars"></i>
+                  </span>
+               </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-9">
+               <div class="main-menu">
+                  <ul class="nav">
+                     <li><a href="/index.html"> Home </a> </li>
+                    <li><a href="/pages/contact.html"> Contact Us </a> </li>
+                     </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <br>
+   <br>
+    <div class="container">
+      <div class="about">
+        <h1>About Learniverse</h1>
+        <p>
+          Learniver is a platform where you can learn and set full university
+          courses. You can also create your own courses and share them with the
+          world. You can also learn from other people's courses. You can also
+          create your own courses and share them with the world. You can also
+          learn from other people's courses.
+        </p>
+
+        <div class="container">
+          <!-- Contact Us content -->
+          <div class="contact">
+              <h1>Contact Us</h1>
+              <p>
+                  You can reach out to us through the following methods:
+              </p>
+              <ul>
+                  <li>Email: <a href="mailto:contact@learniverse.com">contact@learniverse.com</a></li>
+                  <li>Phone: <a href="tel:344-755-111">344-755-111</a></li>
+                  <li>Address: 123 Main Street, Your City, Your Country</li>
+              </ul>
+              <p>
+                  Feel free to send us a message using the form below:
+              </p>
+              <form action="process_contact_form.php" method="POST">
+                  <!-- Add form fields here (e.g., name, email, message) -->
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+  
+                  <button type="submit">Send Message</button>
+              </form>
+          </div>
+      </div>  
+    </div>
+    <br>
+    <br>
+    </div>
+    <!-- footer -->
+    <footer class="footer-area footer--light">
+      <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="footer-widget">
+                <div class="widget-about">
+                  <img
+                    src="http://placehold.it/250x80"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <p>
+                    We are a team of designers and developers that create high
+                    quality HTML Template & Woocommerce, Shopify Theme.
+                  </p>
+                  <ul class="contact-details">
+                    <li>
+                      <span class="icon-earphones"></span> Call Us:
+                      <a href="tel:344-755-111">344-755-111</a>
+                    </li>
+                    <li>
+                      <span class="icon-envelope-open"></span>
+                      <a href="mailto:support@learniverse.com"
+                        >support@learniverse.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <div class="footer-widget">
+                <div class="footer-menu">
+                  <h4 class="footer-widget-title">Our Site</h4>
+                  <ul>
+                    <li>
+                      <a href="/pages/about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">How It Works</a>
+                    </li>
+                    <li>
+                      <a href="#">Affiliates</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="/pages/signup.html">Contact Us</a>
+                    </li>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-lg-3 -->
+
+            <div class="col-sm-4">
+              <div class="footer-widget">
+                <div class="footer-menu no-padding">
+                  <h4 class="footer-widget-title">Help Support</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Support Forum</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Support Policy</a>
+                    </li>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- Ends: .col-lg-3 -->
+          </div>
+          <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+      </div>
+      <!-- end /.footer-big -->
+
+      <div class="mini-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>
+                  © 2023 <a href="#">learniverse</a>. All rights reserved. Created
+                  by
+                  <a href="#">learniverse Team</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
+</html>
