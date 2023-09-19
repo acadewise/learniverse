@@ -90,7 +90,30 @@
     </style>
   </head>
   <body>
-    <!-- Your sign-in form -->
+    <header>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-3">
+               <div class="logo">
+                  <a href="/" title="logo"> learniverse </a>
+               </div>
+               <div class="mob-menu">
+                  <span>
+                     <i class="fa fa-bars"></i>
+                  </span>
+               </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-9">
+               <div class="main-menu">
+                  <ul class="right-nav">
+                      <li><a href="#"> <i class="fa fa-user"></i> About </a> </li>
+                    <li class="active"> <a href="#"> <i class="fa fa-sign-in"></i> Contact </a> </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
     <div
       class="container d-flex align-items-center justify-content-center min-vh-100"
     >
@@ -103,7 +126,7 @@
           <div class="signin__container">
             <!-- Sign-in form -->
             <form id="signinForm">
-              <h1 class="signin__title">Sign In</h1>
+              <h1 class="signin__title">Send code</h1>
               <div class="signin__input">
                 <i class="fas fa-user"></i>
                 <input
@@ -114,40 +137,13 @@
                   required
                 />
               </div>
-              <div class="signin__input">
-                <i class="fas fa-lock"></i>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Password"
-                  required
-                />
-              </div>
               <input
                 type="button"
-                value="Sign In"
+                value="Send code"
                 class="signin__btn"
                 id="signinBtn"
               />
             </form>
-            <div class="forgot-password">
-              <a href="#" id="forgotPasswordLink">Forgot Password?</a>
-            </div>
-            <div class="signin__social-icon">
-              <a href="#" class="signin__social-icon-link"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="signin__social-icon-link"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="signin__social-icon-link"
-                ><i class="fab fa-google"></i
-              ></a>
-              <a href="#" class="signin__social-icon-link"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
           </div>
         </div>
       </div>
@@ -180,26 +176,118 @@
                   id="resetPasswordBtn"
                 />
               </form>
-              <div class="signin__social-icon">
-                <a href="#" class="signin__social-icon-link"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="signin__social-icon-link"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" class="signin__social-icon-link"
-                  ><i class="fab fa-google"></i
-                ></a>
-                <a href="#" class="signin__social-icon-link"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- footer -->
+    <footer class="footer-area footer--light">
+      <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="footer-widget">
+                <div class="widget-about">
+                  <img
+                    src="http://placehold.it/250x80"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <p>
+                    We are a team of designers and developers that create high
+                    quality HTML Template & Woocommerce, Shopify Theme.
+                  </p>
+                  <ul class="contact-details">
+                    <li>
+                      <span class="icon-earphones"></span> Call Us:
+                      <a href="tel:344-755-111">344-755-111</a>
+                    </li>
+                    <li>
+                      <span class="icon-envelope-open"></span>
+                      <a href="mailto:support@learniverse.com"
+                        >support@learniverse.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
 
+            <div class="col-md-3 col-sm-4">
+              <div class="footer-widget">
+                <div class="footer-menu">
+                  <h4 class="footer-widget-title">Our Site</h4>
+                  <ul>
+                    <li>
+                      <a href="/pages/about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">How It Works</a>
+                    </li>
+                    <li>
+                      <a href="#">Affiliates</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="/pages/contact.html">Contact Us</a>
+                    </li>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-lg-3 -->
+
+            <div class="col-sm-4">
+              <div class="footer-widget">
+                <div class="footer-menu no-padding">
+                  <h4 class="footer-widget-title">Help Support</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Support Forum</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Support Policy</a>
+                    </li>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- Ends: .col-lg-3 -->
+          </div>
+          <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+      </div>
+      <!-- end /.footer-big -->
+
+      <div class="mini-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>
+                  © 2023 <a href="#">learniverse</a>. All rights reserved. Created
+                  by
+                  <a href="#">learniverse Team</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Your JavaScript code for sign-in and password reset functionality -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
